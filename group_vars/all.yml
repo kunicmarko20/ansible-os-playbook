@@ -1,0 +1,18 @@
+---
+
+php_enable_webserver: false
+
+php_packages_extra:
+  - php-mysql
+  - php-intl
+  - php-zip
+
+composer_home_path: '~/.config/composer'
+composer_home_owner: vagrant
+composer_home_group: vagrant
+
+composer_global_packages:
+  - { name: phpunit/phpunit }
+  - { name: phpstan/phpstan }
+  - { name: squizlabs/php_codesniffer }
+  - { name: maglnet/composer-require-checker }
