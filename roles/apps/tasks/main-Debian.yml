@@ -1,0 +1,12 @@
+---
+
+- name: Install Applications with Package Manager
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ system_packages | list + system_packages_extra | list }}"
+
+- name: Install Applications from URLs
+  apt:
+    deb: "{{ item }}"
+  with_items: "{{ url_packages }}"

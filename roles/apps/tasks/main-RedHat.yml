@@ -1,0 +1,7 @@
+---
+
+- name: Install Applications with Package Manager
+  dnf:
+     name: "{{ item }}"
+     state: latest
+  with_items: "{{ system_packages | list + system_packages_extra | list + url_packages | list }}"

@@ -3,6 +3,13 @@
   connection: local
   become: yes
   become_method: sudo
+  pre_tasks:
+    - name: Install roles from Ansible Galaxy
+      command: ansible-galaxy install {{ item }}
+      with_items:
+        - "{{ ansible_galaxy_roles }}"
   roles:
     - role: geerlingguy.php
     - role: geerlingguy.composer
+    - role: geerlingguy.mysql
+    - role: apps

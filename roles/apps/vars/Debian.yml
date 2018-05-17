@@ -1,0 +1,8 @@
+---
+
+system_packages_extra:
+  - vagrant
+  - virtualbox
+
+url_packages:
+  - https://downloads.slack-edge.com/linux_releases/slack-desktop-3.2.0-beta25a7a50e-amd64.deb

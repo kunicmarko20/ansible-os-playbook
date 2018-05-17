@@ -1,5 +1,10 @@
 ---
 
+ansible_galaxy_roles:
+  - geerlingguy.php
+  - geerlingguy.composer
+  - geerlingguy.mysql
+
 php_enable_webserver: false
 
 php_packages_extra:
@@ -16,3 +21,5 @@ composer_global_packages:
   - { name: phpstan/phpstan }
   - { name: squizlabs/php_codesniffer }
   - { name: maglnet/composer-require-checker }
+
+system_packages: []
