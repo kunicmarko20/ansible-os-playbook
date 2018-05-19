@@ -22,4 +22,5 @@ composer_global_packages:
   - { name: squizlabs/php_codesniffer }
   - { name: maglnet/composer-require-checker }
 
-system_packages: []
+system_packages:
+  - vagrant

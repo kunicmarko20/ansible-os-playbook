@@ -1,5 +1,9 @@
 ---
 
+- name: Add Repositories
+  shell: dnf config-manager --add-repo "{{ item }}"
+  with_items: "{{ repositories }}"
+
 - name: Install Applications with Package Manager
   dnf:
      name: "{{ item }}"

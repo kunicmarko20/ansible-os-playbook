@@ -1,5 +1,10 @@
 ---
 
+- name: Add Repositories
+  apt_repository:
+     repo: "{{ item }}"
+  with_items: "{{ repositories }}"
+
 - name: Install Applications with Package Manager
   apt:
     name: "{{ item }}"

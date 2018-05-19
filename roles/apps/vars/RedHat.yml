@@ -11,8 +11,10 @@ system_packages_extra:
   - kernel-headers
   - kernel-devel
   - dkms
+  - VirtualBox-5.2
 
 url_packages:
   - https://downloads.slack-edge.com/linux_releases/slack-3.2.0.beta25a7a50e-0.1.fc21.x86_64.rpm
-  - https://releases.hashicorp.com/vagrant/2.1.1/vagrant_2.1.1_x86_64.rpm
-  - https://download.virtualbox.org/virtualbox/5.2.12/VirtualBox-5.2-5.2.12_122591_fedora26-1.x86_64.rpm
+
+repositories:
+  - http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
