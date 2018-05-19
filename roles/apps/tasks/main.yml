@@ -5,3 +5,9 @@
 
 - name: Include OS-specific tasks
   include_tasks: "main-{{ansible_os_family}}.yml"
+
+- name: Install PHPStorm
+  unarchive:
+    src: https://download.jetbrains.com/webide/PhpStorm-2018.1.4.tar.gz
+    dest: /opt
+    remote_src: yes

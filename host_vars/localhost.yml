@@ -24,3 +24,7 @@ composer_global_packages:
 
 system_packages:
   - vagrant
+  - filezilla
+  - guake
+  - byobu
+  - vlc

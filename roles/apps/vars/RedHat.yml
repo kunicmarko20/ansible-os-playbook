@@ -15,6 +15,7 @@ system_packages_extra:
 
 url_packages:
   - https://downloads.slack-edge.com/linux_releases/slack-3.2.0.beta25a7a50e-0.1.fc21.x86_64.rpm
+  - https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
 
 repositories:
   - http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo

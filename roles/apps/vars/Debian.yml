@@ -5,5 +5,6 @@ system_packages_extra:
 
 url_packages:
   - https://downloads.slack-edge.com/linux_releases/slack-desktop-3.2.0-beta25a7a50e-amd64.deb
+  - https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 
 repositories: []
